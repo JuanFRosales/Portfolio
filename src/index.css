@@ -1,0 +1,203 @@
+:root {
+  --light: #f8f8f0;
+  --grey1: #666c;
+  --grey2: rgba(69, 69, 69, 0.845);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--light);
+}
+
+section {
+  margin: 20px auto;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+#welcome {
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/guate.jpg");
+  background-size: cover;
+  background-blend-mode: hue;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding: 0;
+}
+
+#welcome h1 {
+  text-align: center;
+  font-size: 5em;
+  color: var(--light);
+  margin-left: 10%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.button {
+  background-color: var(--grey1);
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 40vh;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: var(--grey2);
+}
+
+#mainInfo {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr 1.5fr;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  font-size: large;
+}
+
+#profile {
+  margin: 20px auto;
+  width: 250px;
+  height: 300px;
+  border-radius: 100%;
+  display: grid;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  font-weight: bold;
+  border-radius: 25px;
+  background-image: url("/clouds.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 10px;
+  color: var(--light);
+  font-size: large;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 5em;
+  border: #666 solid 1px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+#contact a {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+
+#linkedin {
+  background-image: url("/linkedin.png");
+  background-size: cover;
+}
+
+#github {
+  background-image: url("/github.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#mail {
+  background-image: url("/mail.png");
+  background-size: cover;
+  color: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.5em;
+  color: #666;
+}
+
+/* ----------------------------- Modal and Video Styles ----------------------------- */
+
+/* Modal Overlay - darkened background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark background for the modal */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure modal is on top */
+}
+
+/* Modal Content */
+.modal-content {
+  background: #ffffff00;
+  padding: 20px;
+  height: 80%;
+  width: 90%; /* Make the modal responsive */
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+/* Make the video responsive */
+video {
+  width: 100%; 
+  height: 100%;
+ 
+}
+
+/* Optional: Hover effects for the buttons (including About Me button) */
+.button:hover {
+  background-color: var(--grey2);
+}
