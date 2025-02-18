@@ -18,6 +18,7 @@ const MainInfo: React.FC = () => {
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript/TypeScript</li>
+          <li>Python</li>
         </ul>
         <ul>
           <li>React/Native</li>
@@ -27,11 +28,17 @@ const MainInfo: React.FC = () => {
         </ul>
         <ul>
           <li>Figma</li>
-          <li>Adobe XD</li>
           <li>Photoshop</li>
           <li>Illustrator</li>
           <li>After Effects</li>
         </ul>
+        <ul>
+          <li>Docker</li>
+          <li>Azure</li>
+          <li>OpenCV</li>
+          <li>Git</li>
+        </ul>
+
       </div>
     </section>
   );
